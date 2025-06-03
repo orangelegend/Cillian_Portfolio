@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio with Sidebar</title>
+
+  <!-- DaisyUI & Tailwind CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+
+  <style>
+    body {
+      background-color: #010d0e;
+    }
+  </style>
+</head>
+<body class="text-white">
+  <div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <aside class="w-64 p-6 hidden md:block border-[3px] border-black bg-[#0a3a2a] opacity-80">
+      <h2 class="text-2xl font-bold mb-6">My Portfolio</h2>
+      <ul class="menu space-y-2">
+        <li><a href="#about" class="btn btn-ghost w-full justify-start text-left">About me</a></li>
+        <li><a href="#skills" class="btn btn-ghost w-full justify-start text-left">Skills</a></li>
+        <li><a href="#projects" class="btn btn-ghost w-full justify-start text-left">Projects</a></li>
+        <li><a href="#contact" class="btn btn-ghost w-full justify-start text-left">Contact me</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6">
+      <!-- Hero Section -->
+      <div class="hero min-h-screen">
+        <div class="hero-content flex-col lg:flex-row">
+          <!-- Circular Image -->
+          <div class="min-w-60 h-60 rounded-full overflow-hidden border-4 border-white shadow-2xl mb-6">
+            <img
+              src="images/my_pfp.webp"
+              alt="Profile"
+              class="object-cover w-full h-full"
+            />
+          </div>
+
+          <!-- Text Content -->
+          <div class="lg:ml-10">
+            <h1 class="text-5xl font-bold">Cillian Colfer</h1>
+            <p class="mt-4 mb-6">Welcome to my portfolio. I'm passionate about backend development and teamwork.</p>
+
+            <!-- Buttons -->
+            <div class="flex flex-wrap gap-4">
+              <a href="https://www.linkedin.com/in/cillian-colfer-700824311/" target="_blank" class="btn bg-[#313335] text-white">LinkedIn</a>
+              <a href="https://docs.google.com/document/d/e/2PACX-1vTFf3gioBHgpozZ-KXeY-inKg1CVULNnt5eVrWPqxmET4Tw_LvgRy5cj3zfDWuyZ26_wouJttzpRzs9/pub" download class="btn bg-[#ff007f] text-white">Download CV</a>
+              <a href="https://github.com/orangelegend" target="_blank" class="btn bg-[#4cbb17] text-white">GitHub</a>
+              <a href="/my portfolio v2/my portfolio/flask-tailwind-daisy-bootstrap/templates/assets/my cv.pdf" download class="btn bg-[#e24c00] text-white">Download Portfolio</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Me Section -->
+      <section id="about" class="mt-16">
+        <hr class="border-t border-white my-8" />
+        <h2 class="text-4xl font-bold mb-6">ABOUT ME</h2>
+        <p class="mb-4">
+          I’m Cillian Colfer, a junior programmer with a strong aptitude for backend development. I enjoy solving complex problems with efficient code and take pride in writing scalable, maintainable solutions using tools like Node.js, MongoDB, and SQLAlchemy.
+        </p>
+        <p>
+          I thrive in collaborative environments, where communication and teamwork are key to success. I’ve worked on group projects, collaborated using version control systems like Git, and continuously seek feedback to improve both personally and professionally.
+        </p>
+      </section>
+
+      <!-- Skills Section -->
+    <section id="skills" class="max-w-6xl mx-auto py-12 px-4">
+  <hr class="border-t border-white my-8" />
+  <h2 class="text-4xl font-bold mb-6 text-white">MY SKILLS</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
+
+    <!-- FRONT END -->
+    <div class="space-y-4">
+      <h3 class="text-2xl font-bold text-center">Front End</h3>
+
+      <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
+        <input type="checkbox" />
+        <div class="collapse-title font-bold text-lg">Python</div>
+        <div class="collapse-content">
+          <p>Used this for small-time project application and development .</p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
+        <input type="checkbox" />
+        <div class="collapse-title font-bold text-lg">Unity</div>
+        <div class="collapse-content">
+          <p>Currently learning player movement and basic level progression and creation in Unity.</p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
+        <input type="checkbox" />
+        <div class="collapse-title font-bold text-lg">HTML</div>
+        <div class="collapse-content">
+          <p>Currently learning Website development and creation through HTML elements.</p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
+        <input type="checkbox" />
+        <div class="collapse-title font-bold text-lg">CSS</div>
+        <div class="collapse-content">
+          <p>Stylising  web sites using CSS and frameworks like Tailwind, DaisyUI and Flowbite.</p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
+        <input type="checkbox" />
+        <div class="collapse-title font-bold text-lg">Tkinter</div>
+        <div class="collapse-content">
+          <p>Created GUI applications and real-time connections to internet wikis for my Pokemon project.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BACK END -->
+    <div class="space-y-4">
+      <h3 class="text-2xl font-bold text-center">Back End</h3>
+
+      <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
+        <input type="checkbox" />
+        <div class="collapse-title font-bold text-lg">Node.js</div>
+        <div class="collapse-content">
+          <p>Experience in creating frameworks for my projects using Node.Js.</p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
+        <input type="checkbox" />
+        <div class="collapse-title font-bold text-lg">SQLAlchemy</div>
+        <div class="collapse-content">
+          <p>Used SQLALchemy to create secure databases to store usernames, passwords and emails for my website projects.</p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
+        <input type="checkbox" />
+        <div class="collapse-title font-bold text-lg">MongoDB</div>
+        <div class="collapse-content">
+          <p>Alternative database and framework setup akin to SQLALchemy.</p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
+        <input type="checkbox" />
+        <div class="collapse-title font-bold text-lg">C#</div>
+        <div class="collapse-content">
+          <p>Programmed in C# for Unity.</p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
+        <input type="checkbox" />
+        <div class="collapse-title font-bold text-lg">JavaScript</div>
+        <div class="collapse-content">
+          <p>Experience in Javascript for front-end freatures of website project.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXTRA -->
+    <div class="space-y-4">
+      <h3 class="text-2xl font-bold text-center">Extra</h3>
+
+      <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
+        <input type="checkbox" />
+        <div class="collapse-title font-bold text-lg">Figma</div>
+        <div class="collapse-content">
+          <p>Designed UI mockups and wireframes for my web projects.</p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
+        <input type="checkbox" />
+        <div class="collapse-title font-bold text-lg">PyCharm</div>
+        <div class="collapse-content">
+          <p>Used PyCharm as an alternative IDE platform  for  my Python  projects development.</p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
+        <input type="checkbox" />
+        <div class="collapse-title font-bold text-lg">Visual Studio Code</div>
+        <div class="collapse-content">
+          <p>Used as my primary  platform  for  my Python  projects development.</p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
+        <input type="checkbox" />
+        <div class="collapse-title font-bold text-lg">Gantt Charts</div>
+        <div class="collapse-content">
+          <p>Planned projects and milestones using Gantt charts for visual clarity.</p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
+        <input type="checkbox" />
+        <div class="collapse-title font-bold text-lg">Cisco Packet Tracer</div>
+        <div class="collapse-content">
+          <p>Certified in Cisco Packet Tracer;  specifically in building  virtual network configurations.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="about" class="mt-16">
+        <hr class="border-t border-white my-8" />
+        <h2 class="text-4xl font-bold mb-6">MY PROJECTS</h2>
+        <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+  <li>
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <div class="timeline-start mb-10 md:text-end">
+      <time class="font-mono italic">2023</time>
+      <div class="text-lg font-black">Vending machine</div>
+      This was a simple python script that allowed the user to choose a product from the machine. If you input money too low to afford the product then you couldn't buy it. Link:https://github.com/orangelegend/vending-machine
+
+    </div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <div class="timeline-end md:mb-10">
+      <time class="font-mono italic">2023</time>
+      <div class="text-lg font-black">Tkinter Pokedex</div>
+      This python app allowed the user to type in a pokemon name, and if it exists, find the pokemon from a connection to the pokemon wiki. Link: https://github.com/orangelegend/tkinter-pokedex
+    </div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <div class="timeline-start mb-10 md:text-end">
+      <time class="font-mono italic">2024</time>
+      <div class="text-lg font-black">Choose your adventure</div>
+     Allows the user to navigate a text-based, John Carpenter's "The Thing"-esque adventure using vue to navigate between pages based off of user input.Link:https://github.com/orangelegend/adventure
+    </div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <div class="timeline-end md:mb-10">
+      <time class="font-mono italic">2024</time>
+      <div class="text-lg font-black">Landing Page</div>
+      Acts as a landing page and contact form for a website. Link: https://github.com/orangelegend/landing-page
+    </div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <div class="timeline-start mb-10 md:text-end">
+      <time class="font-mono italic">2024</time>
+      <div class="text-lg font-black">zoo website</div>
+     First attempt at creating a website. Link: https://github.com/orangelegend/landing-page
+    </div>
+    
+  </li>
+</ul>
+</section>
+
+
+      <!-- Contact Section -->
+      <section id="contact" class="mt-16">
+  <hr class="border-t border-white my-8" />
+  <h2 class="text-4xl font-bold mb-6 text-white">CONTACT ME</h2>
+  <form action="https://formspree.io/f/meogwbvk" method="POST" class="space-y-4">
+    
+    <label class="block">
+      <span class="text-white">Your email:</span>
+      <input type="email" name="email" required class="border p-2 rounded w-full mt-1" />
+    </label>
+
+    <label class="block">
+      <span class="text-white">Your message:</span>
+      <textarea name="message" required class="border p-2 rounded w-full mt-1"></textarea>
+    </label>
+
+    <!-- Additional form fields can be added here if needed -->
+    
+    <button type="submit" class="btn bg-[#674f2d] text-white">Send</button>
+  </form>
+</section>
+
+    </main>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+  
+  
