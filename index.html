@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio with Sidebar</title>
+  <title>CILLIAN'S PORTFOLIO</title>
 
   <!-- DaisyUI & Tailwind CDN -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
@@ -17,15 +17,29 @@
   </style>
 </head>
 <body class="text-white">
+  <div class="absolute top-4 right-4 z-50">
+    <div class="dropdown dropdown-end">
+      <label tabindex="0" class="btn m-1 btn bg-[#fe2c54] text-white" data-translate-en="Settings" data-translate-es="Configuración" data-translate-fr="Paramètres">Settings</label>
+      <ul tabindex="0" class="dropdown-content menu p-2 sbtn bg-[#fe2c54] text-white">
+        <li>
+          <select id="languageSelect" class="select select-bordered w-full max-w-xs btn bg-[#fe2c54] text-white">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+          </select>
+        </li>
+      </ul>
+    </div>
+  </div>
   <div class="flex min-h-screen">
     <!-- Sidebar -->
     <aside class="w-64 p-6 hidden md:block border-[3px] border-black bg-[#0a3a2a] opacity-80">
-      <h2 class="text-2xl font-bold mb-6">My Portfolio</h2>
+      <h2 class="text-2xl font-bold mb-6" data-translate-en="My Portfolio" data-translate-es="Mi Portafolio" data-translate-fr="Mon Portfolio">My Portfolio</h2>
       <ul class="menu space-y-2">
-        <li><a href="#about" class="btn btn-ghost w-full justify-start text-left">About me</a></li>
-        <li><a href="#skills" class="btn btn-ghost w-full justify-start text-left">Skills</a></li>
-        <li><a href="#projects" class="btn btn-ghost w-full justify-start text-left">Projects</a></li>
-        <li><a href="#contact" class="btn btn-ghost w-full justify-start text-left">Contact me</a></li>
+        <li><a href="#about" class="btn btn-ghost w-full justify-start text-left" data-translate-en="About me" data-translate-es="Sobre mí" data-translate-fr="À propos de moi">About me</a></li>
+        <li><a href="#skills" class="btn btn-ghost w-full justify-start text-left" data-translate-en="Skills" data-translate-es="Habilidades" data-translate-fr="Compétences">Skills</a></li>
+        <li><a href="#projects" class="btn btn-ghost w-full justify-start text-left" data-translate-en="Projects" data-translate-es="Proyectos" data-translate-fr="Projets">Projects</a></li>
+        <li><a href="#contact" class="btn btn-ghost w-full justify-start text-left" data-translate-en="Contact me" data-translate-es="Contáctame" data-translate-fr="Contactez-moi">Contact me</a></li>
       </ul>
     </aside>
 
@@ -46,14 +60,16 @@
           <!-- Text Content -->
           <div class="lg:ml-10">
             <h1 class="text-5xl font-bold">Cillian Colfer</h1>
-            <p class="mt-4 mb-6">Welcome to my portfolio. I'm passionate about backend development and teamwork.</p>
+            <p class="mt-4 mb-6" data-translate-en="Welcome to my portfolio. I'm passionate about backend development and teamwork."
+               data-translate-es="Bienvenido a mi portafolio. Me apasiona el desarrollo backend y el trabajo en equipo."
+               data-translate-fr="Bienvenue dans mon portfolio. Je suis passionné par le développement backend et le travail d'équipe.">Welcome to my portfolio. I'm passionate about backend development and teamwork.</p>
 
             <!-- Buttons -->
             <div class="flex flex-wrap gap-4">
-              <a href="https://www.linkedin.com/in/cillian-colfer-700824311/" target="_blank" class="btn bg-[#313335] text-white">LinkedIn</a>
-              <a href="https://docs.google.com/document/d/e/2PACX-1vTFf3gioBHgpozZ-KXeY-inKg1CVULNnt5eVrWPqxmET4Tw_LvgRy5cj3zfDWuyZ26_wouJttzpRzs9/pub" download class="btn bg-[#ff007f] text-white">Download CV</a>
-              <a href="https://github.com/orangelegend" target="_blank" class="btn bg-[#4cbb17] text-white">GitHub</a>
-              <a href="/my portfolio v2/my portfolio/flask-tailwind-daisy-bootstrap/templates/assets/my cv.pdf" download class="btn bg-[#e24c00] text-white">Download Portfolio</a>
+              <a href="https://www.linkedin.com/in/cillian-colfer-700824311/" target="_blank" class="btn bg-[#313335] text-white" data-translate-en="LinkedIn" data-translate-es="LinkedIn" data-translate-fr="LinkedIn">LinkedIn</a>
+              <a href="https://docs.google.com/document/d/e/2PACX-1vTFf3gioBHgpozZ-KXeY-inKg1CVULNnt5eVrWPqxmET4Tw_LvgRy5cj3zfDWuyZ26_wouJttzpRzs9/pub" download class="btn bg-[#ff007f] text-white" data-translate-en="Download CV" data-translate-es="Descargar CV" data-translate-fr="Télécharger CV">Download CV</a>
+              <a href="https://github.com/orangelegend" target="_blank" class="btn bg-[#4cbb17] text-white" data-translate-en="GitHub" data-translate-es="GitHub" data-translate-fr="GitHub">GitHub</a>
+              <a href="/my portfolio v2/my portfolio/flask-tailwind-daisy-bootstrap/templates/assets/my cv.pdf" download class="btn bg-[#e24c00] text-white" data-translate-en="Download Portfolio" data-translate-es="Descargar Portafolio" data-translate-fr="Télécharger le portfolio">Download Portfolio</a>
             </div>
           </div>
         </div>
@@ -62,152 +78,310 @@
       <!-- About Me Section -->
       <section id="about" class="mt-16">
         <hr class="border-t border-white my-8" />
-        <h2 class="text-4xl font-bold mb-6">ABOUT ME</h2>
-        <p class="mb-4">
+        <h2 class="text-4xl font-bold mb-6" data-translate-en="ABOUT ME" data-translate-es="SOBRE MÍ" data-translate-fr="À PROPOS DE MOI">ABOUT ME</h2>
+        <p class="mb-4" data-translate-en="I’m Cillian Colfer, a junior programmer with a strong aptitude for backend development. I enjoy solving complex problems with efficient code and take pride in writing scalable, maintainable solutions using tools like Node.js, MongoDB, and SQLAlchemy."
+           data-translate-es="Soy Cillian Colfer, un programador junior con gran aptitud para el desarrollo backend. Disfruto resolver problemas complejos con código eficiente y me enorgullece escribir soluciones escalables y mantenibles usando herramientas como Node.js, MongoDB y SQLAlchemy."
+           data-translate-fr="Je suis Cillian Colfer, un programmeur junior avec une forte aptitude pour le développement backend. J'aime résoudre des problèmes complexes avec un code efficace et je suis fier d'écrire des solutions évolutives et maintenables en utilisant des outils comme Node.js, MongoDB et SQLAlchemy.">
           I’m Cillian Colfer, a junior programmer with a strong aptitude for backend development. I enjoy solving complex problems with efficient code and take pride in writing scalable, maintainable solutions using tools like Node.js, MongoDB, and SQLAlchemy.
         </p>
-        <p>
+        <p data-translate-en="I thrive in collaborative environments, where communication and teamwork are key to success. I’ve worked on group projects, collaborated using version control systems like Git, and continuously seek feedback to improve both personally and professionally."
+           data-translate-es="Me destaco en ambientes colaborativos, donde la comunicación y el trabajo en equipo son clave para el éxito. He trabajado en proyectos grupales, colaborado usando sistemas de control de versiones como Git, y busco continuamente feedback para mejorar personal y profesionalmente."
+           data-translate-fr="Je m'épanouis dans des environnements collaboratifs, où la communication et le travail d'équipe sont essentiels au succès. J'ai travaillé sur des projets de groupe, collaboré en utilisant des systèmes de contrôle de version comme Git, et je cherche continuellement des retours pour m'améliorer personnellement et professionnellement.">
           I thrive in collaborative environments, where communication and teamwork are key to success. I’ve worked on group projects, collaborated using version control systems like Git, and continuously seek feedback to improve both personally and professionally.
         </p>
       </section>
 
-      <!-- Skills Section -->
-    <section id="skills" class="max-w-6xl mx-auto py-12 px-4">
-  <hr class="border-t border-white my-8" />
-  <h2 class="text-4xl font-bold mb-6 text-white">MY SKILLS</h2>
+     <section id="skills" class="max-w-6xl mx-auto py-12 px-4">
+  <hr class="border-t border-white my-8" data-translate-en="" data-translate-es="" data-translate-fr="" />
+  <h2 class="text-4xl font-bold mb-6 text-white"
+      data-translate-en="MY SKILLS"
+      data-translate-es="MIS HABILIDADES"
+      data-translate-fr="MES COMPÉTENCES">
+    MY SKILLS
+  </h2>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
 
     <!-- FRONT END -->
     <div class="space-y-4">
-      <h3 class="text-2xl font-bold text-center">Front End</h3>
+      <h3 class="text-2xl font-bold text-center"
+          data-translate-en="Front End"
+          data-translate-es="Front End"
+          data-translate-fr="Front End">
+        Front End
+      </h3>
 
       <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
         <input type="checkbox" />
-        <div class="collapse-title font-bold text-lg">Python</div>
+        <div class="collapse-title font-bold text-lg"
+             data-translate-en="Python"
+             data-translate-es="Python"
+             data-translate-fr="Python">
+          Python
+        </div>
         <div class="collapse-content">
-          <p>Used this for small-time project application and development .</p>
+          <p data-translate-en="Used this for small-time project application and development ."
+             data-translate-es="Usé esto para aplicaciones y desarrollo de pequeños proyectos."
+             data-translate-fr="Utilisé cela pour de petits projets d'application et de développement.">
+            Used this for small-time project application and development .
+          </p>
         </div>
       </div>
 
       <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
         <input type="checkbox" />
-        <div class="collapse-title font-bold text-lg">Unity</div>
+        <div class="collapse-title font-bold text-lg"
+             data-translate-en="Unity"
+             data-translate-es="Unity"
+             data-translate-fr="Unity">
+          Unity
+        </div>
         <div class="collapse-content">
-          <p>Currently learning player movement and basic level progression and creation in Unity.</p>
+          <p data-translate-en="Currently learning player movement and basic level progression and creation in Unity."
+             data-translate-es="Actualmente aprendiendo movimiento de jugador y creación básica de niveles en Unity."
+             data-translate-fr="Apprends actuellement les déplacements du joueur et la progression/création de niveaux de base dans Unity.">
+            Currently learning player movement and basic level progression and creation in Unity.
+          </p>
         </div>
       </div>
 
       <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
         <input type="checkbox" />
-        <div class="collapse-title font-bold text-lg">HTML</div>
+        <div class="collapse-title font-bold text-lg"
+             data-translate-en="HTML"
+             data-translate-es="HTML"
+             data-translate-fr="HTML">
+          HTML
+        </div>
         <div class="collapse-content">
-          <p>Currently learning Website development and creation through HTML elements.</p>
+          <p data-translate-en="Currently learning Website development and creation through HTML elements."
+             data-translate-es="Actualmente aprendiendo desarrollo y creación de sitios web mediante elementos HTML."
+             data-translate-fr="Apprends actuellement le développement et la création de sites web via des éléments HTML.">
+            Currently learning Website development and creation through HTML elements.
+          </p>
         </div>
       </div>
 
       <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
         <input type="checkbox" />
-        <div class="collapse-title font-bold text-lg">CSS</div>
+        <div class="collapse-title font-bold text-lg"
+             data-translate-en="CSS"
+             data-translate-es="CSS"
+             data-translate-fr="CSS">
+          CSS
+        </div>
         <div class="collapse-content">
-          <p>Stylising  web sites using CSS and frameworks like Tailwind, DaisyUI and Flowbite.</p>
+          <p data-translate-en="Stylising  web sites using CSS and frameworks like Tailwind, DaisyUI and Flowbite."
+             data-translate-es="Estilizando sitios web usando CSS y frameworks como Tailwind, DaisyUI y Flowbite."
+             data-translate-fr="Stylisation des sites web avec CSS et des frameworks comme Tailwind, DaisyUI et Flowbite.">
+            Stylising  web sites using CSS and frameworks like Tailwind, DaisyUI and Flowbite.
+          </p>
         </div>
       </div>
 
       <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
         <input type="checkbox" />
-        <div class="collapse-title font-bold text-lg">Tkinter</div>
+        <div class="collapse-title font-bold text-lg"
+             data-translate-en="Tkinter"
+             data-translate-es="Tkinter"
+             data-translate-fr="Tkinter">
+          Tkinter
+        </div>
         <div class="collapse-content">
-          <p>Created GUI applications and real-time connections to internet wikis for my Pokemon project.</p>
+          <p data-translate-en="Created GUI applications and real-time connections to internet wikis for my Pokemon project."
+             data-translate-es="Creé aplicaciones GUI y conexiones en tiempo real a wikis de internet para mi proyecto de Pokémon."
+             data-translate-fr="Créé des applications GUI et des connexions en temps réel à des wikis internet pour mon projet Pokémon.">
+            Created GUI applications and real-time connections to internet wikis for my Pokemon project.
+          </p>
         </div>
       </div>
     </div>
 
     <!-- BACK END -->
     <div class="space-y-4">
-      <h3 class="text-2xl font-bold text-center">Back End</h3>
+      <h3 class="text-2xl font-bold text-center"
+          data-translate-en="Back End"
+          data-translate-es="Back End"
+          data-translate-fr="Back End">
+        Back End
+      </h3>
 
       <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
         <input type="checkbox" />
-        <div class="collapse-title font-bold text-lg">Node.js</div>
+        <div class="collapse-title font-bold text-lg"
+             data-translate-en="Node.js"
+             data-translate-es="Node.js"
+             data-translate-fr="Node.js">
+          Node.js
+        </div>
         <div class="collapse-content">
-          <p>Experience in creating frameworks for my projects using Node.Js.</p>
+          <p data-translate-en="Experience in creating frameworks for my projects using Node.Js."
+             data-translate-es="Experiencia en crear frameworks para mis proyectos usando Node.Js."
+             data-translate-fr="Expérience dans la création de frameworks pour mes projets avec Node.Js.">
+            Experience in creating frameworks for my projects using Node.Js.
+          </p>
         </div>
       </div>
 
       <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
         <input type="checkbox" />
-        <div class="collapse-title font-bold text-lg">SQLAlchemy</div>
+        <div class="collapse-title font-bold text-lg"
+             data-translate-en="SQLAlchemy"
+             data-translate-es="SQLAlchemy"
+             data-translate-fr="SQLAlchemy">
+          SQLAlchemy
+        </div>
         <div class="collapse-content">
-          <p>Used SQLALchemy to create secure databases to store usernames, passwords and emails for my website projects.</p>
+          <p data-translate-en="Used SQLALchemy to create secure databases to store usernames, passwords and emails for my website projects."
+             data-translate-es="Usé SQLAlchemy para crear bases de datos seguras que almacenan nombres de usuario, contraseñas y correos para mis proyectos web."
+             data-translate-fr="Utilisé SQLAlchemy pour créer des bases de données sécurisées stockant noms d'utilisateur, mots de passe et emails pour mes projets web.">
+            Used SQLALchemy to create secure databases to store usernames, passwords and emails for my website projects.
+          </p>
         </div>
       </div>
 
       <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
         <input type="checkbox" />
-        <div class="collapse-title font-bold text-lg">MongoDB</div>
+        <div class="collapse-title font-bold text-lg"
+             data-translate-en="MongoDB"
+             data-translate-es="MongoDB"
+             data-translate-fr="MongoDB">
+          MongoDB
+        </div>
         <div class="collapse-content">
-          <p>Alternative database and framework setup akin to SQLALchemy.</p>
+          <p data-translate-en="Alternative database and framework setup akin to SQLALchemy."
+             data-translate-es="Base de datos alternativa y configuración de framework similar a SQLAlchemy."
+             data-translate-fr="Base de données alternative et configuration de framework similaire à SQLAlchemy.">
+            Alternative database and framework setup akin to SQLALchemy.
+          </p>
         </div>
       </div>
 
       <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
         <input type="checkbox" />
-        <div class="collapse-title font-bold text-lg">C#</div>
+        <div class="collapse-title font-bold text-lg"
+             data-translate-en="C#"
+             data-translate-es="C#"
+             data-translate-fr="C#">
+          C#
+        </div>
         <div class="collapse-content">
-          <p>Programmed in C# for Unity.</p>
+          <p data-translate-en="Programmed in C# for Unity."
+             data-translate-es="Programé en C# para Unity."
+             data-translate-fr="Programmation en C# pour Unity.">
+            Programmed in C# for Unity.
+          </p>
         </div>
       </div>
 
       <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
         <input type="checkbox" />
-        <div class="collapse-title font-bold text-lg">JavaScript</div>
+        <div class="collapse-title font-bold text-lg"
+             data-translate-en="JavaScript"
+             data-translate-es="JavaScript"
+             data-translate-fr="JavaScript">
+          JavaScript
+        </div>
         <div class="collapse-content">
-          <p>Experience in Javascript for front-end freatures of website project.</p>
+          <p data-translate-en="Experience in Javascript for front-end freatures of website project."
+             data-translate-es="Experiencia en Javascript para funciones front-end de proyectos web."
+             data-translate-fr="Expérience en Javascript pour les fonctionnalités front-end de projets web.">
+            Experience in Javascript for front-end freatures of website project.
+          </p>
         </div>
       </div>
     </div>
 
     <!-- EXTRA -->
     <div class="space-y-4">
-      <h3 class="text-2xl font-bold text-center">Extra</h3>
+      <h3 class="text-2xl font-bold text-center"
+          data-translate-en="Extra"
+          data-translate-es="Extra"
+          data-translate-fr="Extra">
+        Extra
+      </h3>
 
       <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
         <input type="checkbox" />
-        <div class="collapse-title font-bold text-lg">Figma</div>
+        <div class="collapse-title font-bold text-lg"
+             data-translate-en="Figma"
+             data-translate-es="Figma"
+             data-translate-fr="Figma">
+          Figma
+        </div>
         <div class="collapse-content">
-          <p>Designed UI mockups and wireframes for my web projects.</p>
+          <p data-translate-en="Designed UI mockups and wireframes for my web projects."
+             data-translate-es="Diseñé maquetas UI y wireframes para mis proyectos web."
+             data-translate-fr="Conception de maquettes UI et wireframes pour mes projets web.">
+            Designed UI mockups and wireframes for my web projects.
+          </p>
         </div>
       </div>
 
       <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
         <input type="checkbox" />
-        <div class="collapse-title font-bold text-lg">PyCharm</div>
+        <div class="collapse-title font-bold text-lg"
+             data-translate-en="PyCharm"
+             data-translate-es="PyCharm"
+             data-translate-fr="PyCharm">
+          PyCharm
+        </div>
         <div class="collapse-content">
-          <p>Used PyCharm as an alternative IDE platform  for  my Python  projects development.</p>
+          <p data-translate-en="Used PyCharm as an alternative IDE platform  for  my Python  projects development."
+             data-translate-es="Usé PyCharm como plataforma IDE alternativa para el desarrollo de mis proyectos Python."
+             data-translate-fr="Utilisé PyCharm comme plateforme IDE alternative pour le développement de mes projets Python.">
+            Used PyCharm as an alternative IDE platform  for  my Python  projects development.
+          </p>
         </div>
       </div>
 
       <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
         <input type="checkbox" />
-        <div class="collapse-title font-bold text-lg">Visual Studio Code</div>
+        <div class="collapse-title font-bold text-lg"
+             data-translate-en="Visual Studio Code"
+             data-translate-es="Visual Studio Code"
+             data-translate-fr="Visual Studio Code">
+          Visual Studio Code
+        </div>
         <div class="collapse-content">
-          <p>Used as my primary  platform  for  my Python  projects development.</p>
+          <p data-translate-en="Used as my primary  platform  for  my Python  projects development."
+             data-translate-es="Usado como mi plataforma principal para el desarrollo de mis proyectos Python."
+             data-translate-fr="Utilisé comme ma plateforme principale pour le développement de mes projets Python.">
+            Used as my primary  platform  for  my Python  projects development.
+          </p>
         </div>
       </div>
 
       <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
         <input type="checkbox" />
-        <div class="collapse-title font-bold text-lg">Gantt Charts</div>
+        <div class="collapse-title font-bold text-lg"
+             data-translate-en="Gantt Charts"
+             data-translate-es="Diagramas de Gantt"
+             data-translate-fr="Diagrammes de Gantt">
+          Gantt Charts
+        </div>
         <div class="collapse-content">
-          <p>Planned projects and milestones using Gantt charts for visual clarity.</p>
+          <p data-translate-en="Planned projects and milestones using Gantt charts for visual clarity."
+             data-translate-es="Planifiqué proyectos y hitos usando diagramas de Gantt para claridad visual."
+             data-translate-fr="Planification de projets et jalons à l'aide de diagrammes de Gantt pour plus de clarté visuelle.">
+            Planned projects and milestones using Gantt charts for visual clarity.
+          </p>
         </div>
       </div>
 
       <div class="collapse collapse-arrow bg-[#1f2937] rounded-xl shadow">
         <input type="checkbox" />
-        <div class="collapse-title font-bold text-lg">Cisco Packet Tracer</div>
+        <div class="collapse-title font-bold text-lg"
+             data-translate-en="Cisco Packet Tracer"
+             data-translate-es="Cisco Packet Tracer"
+             data-translate-fr="Cisco Packet Tracer">
+          Cisco Packet Tracer
+        </div>
         <div class="collapse-content">
-          <p>Certified in Cisco Packet Tracer;  specifically in building  virtual network configurations.</p>
+          <p data-translate-en="Certified in Cisco Packet Tracer;  specifically in building  virtual network configurations."
+             data-translate-es="Certificado en Cisco Packet Tracer; específicamente en la construcción de configuraciones de red virtual."
+             data-translate-fr="Certifié en Cisco Packet Tracer ; spécifiquement pour la construction de configurations réseau virtuelles.">
+            Certified in Cisco Packet Tracer;  specifically in building  virtual network configurations.
+          </p>
         </div>
       </div>
     </div>
@@ -215,7 +389,7 @@
   </div>
 </section>
 
-<section id="about" class="mt-16">
+      <section id="projects" class="mt-16">
         <hr class="border-t border-white my-8" />
         <h2 class="text-4xl font-bold mb-6">MY PROJECTS</h2>
         <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
@@ -235,11 +409,14 @@
       </svg>
     </div>
     <div class="timeline-start mb-10 md:text-end">
-      <time class="font-mono italic">2023</time>
-      <div class="text-lg font-black">Vending machine</div>
-      This was a simple python script that allowed the user to choose a product from the machine. If you input money too low to afford the product then you couldn't buy it. Link:https://github.com/orangelegend/vending-machine
-
-    </div>
+  <time class="font-mono italic" data-translate-en="2023" data-translate-es="2023" data-translate-fr="2023">2023</time>
+  <div class="text-lg font-black" data-translate-en="Vending machine" data-translate-es="Máquina expendedora" data-translate-fr="Distributeur automatique">Vending machine</div>
+  <p data-translate-en="This was a simple python script that allowed the user to choose a product from the machine. If you input money too low to afford the product then you couldn't buy it. Link: https://github.com/orangelegend/vending-machine"
+     data-translate-es="Este fue un script simple en Python que permitía al usuario elegir un producto de la máquina. Si ingresabas menos dinero del necesario para comprar el producto, no podías comprarlo. Enlace: https://github.com/orangelegend/vending-machine"
+     data-translate-fr="C'était un script Python simple qui permettait à l'utilisateur de choisir un produit dans la machine. Si vous entrez trop peu d'argent pour acheter le produit, vous ne pouvez pas l'acheter. Lien : https://github.com/orangelegend/vending-machine">
+    This was a simple python script that allowed the user to choose a product from the machine. If you input money too low to afford the product then you couldn't buy it. Link: https://github.com/orangelegend/vending-machine
+  </p>
+</div>
     <hr />
   </li>
   <li>
@@ -259,10 +436,14 @@
       </svg>
     </div>
     <div class="timeline-end md:mb-10">
-      <time class="font-mono italic">2023</time>
-      <div class="text-lg font-black">Tkinter Pokedex</div>
-      This python app allowed the user to type in a pokemon name, and if it exists, find the pokemon from a connection to the pokemon wiki. Link: https://github.com/orangelegend/tkinter-pokedex
-    </div>
+  <time class="font-mono italic" data-translate-en="2023" data-translate-es="2023" data-translate-fr="2023">2023</time>
+  <div class="text-lg font-black" data-translate-en="Tkinter Pokedex" data-translate-es="Tkinter Pokedex" data-translate-fr="Tkinter Pokedex">Tkinter Pokedex</div>
+  <p data-translate-en="This python app allowed the user to type in a pokemon name, and if it exists, find the pokemon from a connection to the pokemon wiki. Link: https://github.com/orangelegend/tkinter-pokedex"
+     data-translate-es="Esta aplicación de Python permitía al usuario escribir el nombre de un Pokémon, y si existía, encontrarlo mediante una conexión a la wiki de Pokémon. Enlace: https://github.com/orangelegend/tkinter-pokedex"
+     data-translate-fr="Cette application Python permettait à l'utilisateur de saisir le nom d'un Pokémon, et si celui-ci existe, de le trouver grâce à une connexion à la wiki Pokémon. Lien : https://github.com/orangelegend/tkinter-pokedex">
+    This python app allowed the user to type in a pokemon name, and if it exists, find the pokemon from a connection to the pokemon wiki. Link: https://github.com/orangelegend/tkinter-pokedex
+  </p>
+</div>
     <hr />
   </li>
   <li>
@@ -282,10 +463,14 @@
       </svg>
     </div>
     <div class="timeline-start mb-10 md:text-end">
-      <time class="font-mono italic">2024</time>
-      <div class="text-lg font-black">Choose your adventure</div>
-     Allows the user to navigate a text-based, John Carpenter's "The Thing"-esque adventure using vue to navigate between pages based off of user input.Link:https://github.com/orangelegend/adventure
-    </div>
+  <time class="font-mono italic" data-translate-en="2024" data-translate-es="2024" data-translate-fr="2024">2024</time>
+  <div class="text-lg font-black" data-translate-en="Choose your adventure" data-translate-es="Elige tu aventura" data-translate-fr="Choisis ton aventure">Choose your adventure</div>
+  <p data-translate-en="Allows the user to navigate a text-based, John Carpenter's 'The Thing'-esque adventure using vue to navigate between pages based off of user input. Link: https://github.com/orangelegend/adventure"
+     data-translate-es="Permite al usuario navegar una aventura basada en texto, al estilo de 'The Thing' de John Carpenter, usando Vue para navegar entre páginas según la entrada del usuario. Enlace: https://github.com/orangelegend/adventure"
+     data-translate-fr="Permet à l'utilisateur de naviguer dans une aventure textuelle à la manière de 'The Thing' de John Carpenter, utilisant Vue pour naviguer entre les pages en fonction des entrées utilisateur. Lien : https://github.com/orangelegend/adventure">
+    Allows the user to navigate a text-based, John Carpenter's "The Thing"-esque adventure using vue to navigate between pages based off of user input. Link: https://github.com/orangelegend/adventure
+  </p>
+</div>
     <hr />
   </li>
   <li>
@@ -305,10 +490,14 @@
       </svg>
     </div>
     <div class="timeline-end md:mb-10">
-      <time class="font-mono italic">2024</time>
-      <div class="text-lg font-black">Landing Page</div>
-      Acts as a landing page and contact form for a website. Link: https://github.com/orangelegend/landing-page
-    </div>
+  <time class="font-mono italic" data-translate-en="2024" data-translate-es="2024" data-translate-fr="2024">2024</time>
+  <div class="text-lg font-black" data-translate-en="Landing Page" data-translate-es="Página de inicio" data-translate-fr="Page d'accueil">Landing Page</div>
+  <p data-translate-en="Acts as a landing page and contact form for a website. Link: https://github.com/orangelegend/landing-page"
+     data-translate-es="Actúa como página de inicio y formulario de contacto para un sitio web. Enlace: https://github.com/orangelegend/landing-page"
+     data-translate-fr="Agit comme page d'accueil et formulaire de contact pour un site web. Lien : https://github.com/orangelegend/landing-page">
+    Acts as a landing page and contact form for a website. Link: https://github.com/orangelegend/landing-page
+  </p>
+</div>
     <hr />
   </li>
   <li>
@@ -328,10 +517,14 @@
       </svg>
     </div>
     <div class="timeline-start mb-10 md:text-end">
-      <time class="font-mono italic">2024</time>
-      <div class="text-lg font-black">zoo website</div>
-     First attempt at creating a website. Link: https://github.com/orangelegend/landing-page
-    </div>
+  <time class="font-mono italic" data-translate-en="2024" data-translate-es="2024" data-translate-fr="2024">2024</time>
+  <div class="text-lg font-black" data-translate-en="zoo website" data-translate-es="sitio web del zoológico" data-translate-fr="site web du zoo">zoo website</div>
+  <p data-translate-en="First attempt at creating a website. Link: https://github.com/orangelegend/landing-page"
+     data-translate-es="Primer intento de crear un sitio web. Enlace: https://github.com/orangelegend/landing-page"
+     data-translate-fr="Première tentative de création d'un site web. Lien : https://github.com/orangelegend/landing-page">
+    First attempt at creating a website. Link: https://github.com/orangelegend/landing-page
+  </p>
+</div>
     
   </li>
 </ul>
@@ -339,33 +532,47 @@
 
 
       <!-- Contact Section -->
-      <section id="contact" class="mt-16">
-  <hr class="border-t border-white my-8" />
-  <h2 class="text-4xl font-bold mb-6 text-white">CONTACT ME</h2>
-  <form action="https://formspree.io/f/meogwbvk" method="POST" class="space-y-4">
-    
-    <label class="block">
-      <span class="text-white">Your email:</span>
-      <input type="email" name="email" required class="border p-2 rounded w-full mt-1" />
-    </label>
-
-    <label class="block">
-      <span class="text-white">Your message:</span>
-      <textarea name="message" required class="border p-2 rounded w-full mt-1"></textarea>
-    </label>
-
-    <!-- Additional form fields can be added here if needed -->
-    
-    <button type="submit" class="btn bg-[#674f2d] text-white">Send</button>
-  </form>
-</section>
-
+      <section id="contact" class="mt-16 max-w-6xl mx-auto px-4">
+        <hr class="border-t border-white my-8" />
+        <h2 class="text-4xl font-bold mb-6" data-translate-en="CONTACT ME" data-translate-es="CONTÁCTAME" data-translate-fr="CONTACTEZ-MOI">CONTACT ME</h2>
+        <form action="mailto:cilliancolfer@gmail.com" method="post" enctype="text/plain" class="space-y-6 max-w-xl mx-auto">
+          <div>
+            <label for="name" class="block mb-2" data-translate-en="Name" data-translate-es="Nombre" data-translate-fr="Nom">Name</label>
+            <input type="text" id="name" name="name" class="input input-bordered w-full" required />
+          </div>
+          <div>
+            <label for="email" class="block mb-2" data-translate-en="Email" data-translate-es="Correo electrónico" data-translate-fr="E-mail">Email</label>
+            <input type="email" id="email" name="email" class="input input-bordered w-full" required />
+          </div>
+          <div>
+            <label for="message" class="block mb-2" data-translate-en="Message" data-translate-es="Mensaje" data-translate-fr="Message">Message</label>
+            <textarea id="message" name="message" rows="5" class="textarea textarea-bordered w-full" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" data-translate-en="Send" data-translate-es="Enviar" data-translate-fr="Envoyer">Send</button>
+        </form>
+      </section>
     </main>
   </div>
+
+  <script>
+    const languageSelect = document.getElementById('languageSelect');
+
+    function updateLanguage(lang) {
+      // All elements that have data-translate-* attributes
+      document.querySelectorAll('[data-translate-en]').forEach(el => {
+        el.textContent = el.getAttribute(`data-translate-${lang}`) || el.textContent;
+      });
+    }
+
+    languageSelect.addEventListener('change', (e) => {
+      updateLanguage(e.target.value);
+    });
+
+    // Initialize default language to English
+    updateLanguage('en');
+  </script>
 </body>
 </html>
-
-
 
 
 
